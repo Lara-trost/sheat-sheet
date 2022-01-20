@@ -1,0 +1,88 @@
+/* font-family */
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*spacing and layout */
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid rgba(0, 128, 6, 0.301);
+}
+
+thead th:nth-child(1) {
+    width: 25%;
+}
+
+thead th:nth-child(2) {
+    width: 25%;
+}
+
+thead th:nth-child(3) {
+    width: 50%;
+}
+
+
+/*typography */
+
+th,
+td {
+    padding: 20px;
+}
+
+th {
+    letter-spacing: 2px;
+}
+
+td {
+    letter-spacing: 1px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+
+/*graphics and colors*/
+
+thead {
+    background-color: rgba(128, 36, 0, 0);
+    color: white;
+}
+
+h1 {
+    background-color: rgb(0, 128, 117, 0.5);
+    text-align: center;
+}
+
+
+/*zebra striping*/
+
+tbody tr:nth-child(odd) {
+    background-color: #33ffaa;
+}
+
+tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+table {
+    background-color: rgb(0, 128, 117);
+}
+
+
+/*styling the caption*/
+
+caption {
+    font-family: 'Abril Fatface', cursive;
+    padding: 20px;
+    font-style: italic;
+    color: #666;
+    text-align: right;
+    letter-spacing: 1px;
+    font-size: 200%;
+}

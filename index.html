@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Attribute selectors
+    </title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <!--font-family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@1&family=Roboto:ital,wght@0,100;0,500;1,400&family=Space+Mono&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <h1>Attribute selectors</h1>
+    <!--table 1-->
+    <table>
+        <caption>Presence and value selectors</caption>
+        <!--thead-->
+        <thead>
+            <tr>
+                <th scope="col">Selector</th>
+                <th scope="col">Example</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <!--tbody-->
+        <tbody>
+            <tr>
+                <th scope="row">[attr]</th>
+                <td>a[title]</td>
+                <td>Matches elements with an attr attribute (whose name is the value in square brackets).</td>
+            </tr>
+            <tr>
+                <th scope="row">[attr=value]</th>
+                <td>a[href="https://example.com"]</td>
+                <td>Matches elements with an attr attribute whose value is exactly value — the string inside the quotes.</td>
+            </tr>
+            <tr>
+                <th scope="row">[attr~=value]</th>
+                <td>p[class~="special"]</td>
+                <td>Matches elements with an attr attribute whose value is exactly value, or contains value in its (space separated) list of values.</td>
+            </tr>
+            <tr>
+                <th scope="row">[attr|=value]</th>
+                <td>div[lang|="zh"]</td>
+                <td>Matches elements with an attr attribute whose value is exactly value or begins with value immediately followed by a hyphen</td>
+            </tr>
+        </tbody>
+    </table>
+    <!--table 2-->
+    <table>
+        <caption>Substring matching selectors</caption>
+        <!--thead-->
+        <thead>
+            <tr>
+                <th scope="col">Selector</th>
+                <th scope="col">Example</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <!--tbody-->
+        <tbody>
+            <tr>
+                <th scope="row">[attr^=value]</th>
+                <td>li[class^="box-"]</td>
+                <td>Matches elements with an attr attribute, whose value begins with value.</td>
+            </tr>
+            <tr>
+                <th scope="row">[attr$=value]</th>
+                <td>li[class$="-box"]</td>
+                <td>Matches elements with an attr attribute whose value ends with value.</td>
+            </tr>
+            <tr>
+                <th scope="row">[attr*=value]</th>
+                <td>li[class*="box"]</td>
+                <td>Matches elements with an attr attribute whose value contains value anywhere within the string.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
